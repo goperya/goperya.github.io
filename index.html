@@ -165,39 +165,7 @@
     </div>
 
     <script>
-        window.domains = [       
-            {
-                name: "GoPerya.Net",
-                domain: "goperya.net",
-                url: "https://goperya.net",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://goperya.net/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static.goperya.net/health.htm",
-                        status: 0
-                    }
-                }
-            },
-            {
-                name: "GoPerya.com",
-                domain: "goperya.com",
-                url: "https://goperya.com",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://goperya.com/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static3.goperya.com/health.htm",
-                        status: 0
-                    }
-                }
-            },   
+        window.domains = [   
             {
                 name: "PlayPerya",
                 domain: "PlayPerya.com",
@@ -245,7 +213,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp3'
+                localStorageKey: 'last_used_domain_gp20230116'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
