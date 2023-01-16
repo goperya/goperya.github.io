@@ -181,6 +181,22 @@
                         status: 0
                     }
                 }
+            }, 
+            {
+                name: "PlayGetRich",
+                domain: "PlayGetRich.com",
+                url: "https://playgetrich.com",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://playgetrich.com/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.playgetrich.com/health.htm",
+                        status: 0
+                    }
+                }
             }
         ]
     </script>
@@ -213,7 +229,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp20230116'
+                localStorageKey: 'last_used_domain_gp20230117'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
