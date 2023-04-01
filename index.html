@@ -197,6 +197,22 @@
                         status: 0
                     }
                 }
+            }, 
+            {
+                name: "WinHaveFun",
+                domain: "WinHaveFun.com",
+                url: "https://winhavefun.com",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://winhavefun.com/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.winhavefun.com/health.htm",
+                        status: 0
+                    }
+                }
             }
         ]
     </script>
@@ -229,7 +245,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp20230117'
+                localStorageKey: 'last_used_domain_gp_20230401'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
