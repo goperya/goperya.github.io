@@ -165,7 +165,23 @@
     </div>
 
     <script>
-        window.domains = [   
+        window.domains = [    
+            {
+                name: "FightAcademy",
+                domain: "FightAcademy.com",
+                url: "https://fightacademy.live",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://fightacademy.live/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.fightacademy.live/health.htm",
+                        status: 0
+                    }
+                }
+            }, 
             {
                 name: "PlayPerya",
                 domain: "PlayPerya.com",
@@ -245,7 +261,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20230401'
+                localStorageKey: 'last_used_domain_gp_20230404'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
