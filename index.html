@@ -167,49 +167,17 @@
     <script>
         window.domains = [    
             {
-                name: "FightAcademy",
-                domain: "FightAcademy.com",
-                url: "https://fightacademy.live",
+                name: "ClashOdds",
+                domain: "ClashOdds.live",
+                url: "https://clashodds.live",
                 redirectUrl: "",
                 health_check: {
                     api: {
-                        url: "https://fightacademy.live/health",
+                        url: "https://clashodds.live/health",
                         status: 0
                     },
                     static: {
-                        url: "https://static.fightacademy.live/health.htm",
-                        status: 0
-                    }
-                }
-            }, 
-            {
-                name: "PlayPerya",
-                domain: "PlayPerya.com",
-                url: "https://playperya.com",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://playperya.com/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static.playperya.com/health.htm",
-                        status: 0
-                    }
-                }
-            }, 
-            {
-                name: "PlayGetRich",
-                domain: "PlayGetRich.com",
-                url: "https://playgetrich.com",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://playgetrich.com/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static.playgetrich.com/health.htm",
+                        url: "https://static.clashodds.live/health.htm",
                         status: 0
                     }
                 }
@@ -261,7 +229,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20230404'
+                localStorageKey: 'last_used_domain_gp_20230718'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
