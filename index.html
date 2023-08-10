@@ -165,7 +165,23 @@
     </div>
 
     <script>
-        window.domains = [    
+        window.domains = [   
+            {
+                name: "ClashOdds",
+                domain: "ClashOdds",
+                url: "https://clashodds.co",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://clashodds.co/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.clashodds.co/health.htm",
+                        status: 0
+                    }
+                }
+            }, 
             {
                 name: "Fight Academy",
                 domain: "FightAcademy.Info",
@@ -229,7 +245,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20230718'
+                localStorageKey: 'last_used_domain_gp_20230810'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
