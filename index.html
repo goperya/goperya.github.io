@@ -165,7 +165,23 @@
     </div>
 
     <script>
-        window.domains = [   
+        window.domains = [    
+            {
+                name: "OnlinePerya",
+                domain: "OnlinePerya`",
+                url: "https://onlineperya.app",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://onlineperya.app/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.onlineperya.app/health.htm",
+                        status: 0
+                    }
+                }
+            },
             {
                 name: "ClashOdds",
                 domain: "ClashOdds",
@@ -245,7 +261,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20230810'
+                localStorageKey: 'last_used_domain_gp_20240623'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
