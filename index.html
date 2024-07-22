@@ -183,6 +183,22 @@
                 }
             },
             {
+                name: "OnlinePerya",
+                domain: "OnlinePerya`",
+                url: "https://onlineperya.com",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://onlineperya.com/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.onlineperya.com/health.htm",
+                        status: 0
+                    }
+                }
+            },
+            {
                 name: "ClashOdds",
                 domain: "ClashOdds",
                 url: "https://clashodds.co",
@@ -261,7 +277,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20240623'
+                localStorageKey: 'last_used_domain_gp_20240722'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
