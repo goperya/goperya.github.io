@@ -165,7 +165,23 @@
     </div>
 
     <script>
-        window.domains = [    
+        window.domains = [      
+            {
+                name: "OnlinePerya",
+                domain: "OnlinePerya`",
+                url: "https://peryaapk111.online",
+                redirectUrl: "",
+                health_check: {
+                    api: {
+                        url: "https://peryaapk111.online/health",
+                        status: 0
+                    },
+                    static: {
+                        url: "https://static.peryaapk111.online/health.htm",
+                        status: 0
+                    }
+                }
+            },
             {
                 name: "OnlinePerya",
                 domain: "OnlinePerya`",
@@ -213,38 +229,6 @@
                         status: 0
                     }
                 }
-            }, 
-            {
-                name: "Fight Academy",
-                domain: "FightAcademy.Info",
-                url: "https://fightacademy.info",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://fightacademy.info/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static.fightacademy.info/health.htm",
-                        status: 0
-                    }
-                }
-            }, 
-            {
-                name: "Fight Academy",
-                domain: "FightAcademy.Store",
-                url: "https://fightacademy.store",
-                redirectUrl: "",
-                health_check: {
-                    api: {
-                        url: "https://fightacademy.store/health",
-                        status: 0
-                    },
-                    static: {
-                        url: "https://static.fightacademy.store/health.htm",
-                        status: 0
-                    }
-                }
             }
         ]
     </script>
@@ -277,7 +261,7 @@
 
                 storedDomain: null,
                 firstAvailableDomain: null,
-                localStorageKey: 'last_used_domain_gp_20240722'
+                localStorageKey: 'last_used_domain_gp_20240826'
             },
             mounted(){
                 this.changeStatus(this.statusMessages.init, 0);
